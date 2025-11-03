@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Moon, Sun, Linkedin, Instagram, Menu, X, Home } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Description } from "@radix-ui/react-dialog"
+import { title } from "process"
 
 // ============================================
 // CONFIGURATION SECTION - Easy to customize
@@ -25,16 +26,16 @@ const SLIDESHOW_INTERVAL = 3000 // 3 seconds
 
 const categories = [
   "Home",
-  "Abstract",
-  "Character",
-  "Environment",
-  "Game Design",
-  "Gif",
-  "Lightsout",
-  "Product Design",
-  "Prompt",
   "The Bulb",
-]
+  "Lightsout",
+  "Environment",
+  "Prompt",
+  "Product Design",
+  "Character",
+  "Game Design",
+  "Abstract",
+  "Gif",
+  ]
 
 const projects = {
   Home: [],
@@ -49,22 +50,11 @@ const projects = {
 
       ],
       title: "Ball and Cloth",
-      description: "Amazing nigaball w cloth",
+      description: "Amazing big ball vs my grandpa's cloth.",
       orientation: "vertical",
     },
-    {
-      id: 2,
-      items: [
-        {
-          type: "video",
-          src:"/assets/abstract/abstract_anim2.mov",
-        },
+    
 
-      ],
-      title: "Abstract",
-      description: "IDK What the fuck is this :P",
-      orientation: "vertical",
-    },
     {
       id: 3,
       items: [
@@ -75,7 +65,7 @@ const projects = {
 
       ],
       title: "Balls Dropping",
-      description: "Squid Game PUHAHAHA",
+      description: "Balls with no meaning.",
       orientation: "vertical",
     },
     {
@@ -87,7 +77,7 @@ const projects = {
         },
 
       ],
-      title: "Wallpaper",
+      title: "metrix",
       description: "Fkn Matrix vibes",
       orientation: "vertical",
     },
@@ -148,10 +138,10 @@ const projects = {
           src: "/assets/environment/environment_arcrender.mp4",
         },
       ],
-      title: "Coastal Paradise",
-      description:
-        "Stunning rocky coastal environment with turquoise waters, dramatic rock formations, and architectural elements in bright daylight.",
-      orientation: "horizontal",
+      title: "Arc Valley",
+description: "Unreal Engine 5.4 Valley Environment Design\nUnreal Engine 5.4.4\nUsed Quixel Bridge Megascan\nColor grade and edit: Premiere Pro"
+,
+orientation: "horizontal",
     },
     {
       id: 9,
@@ -163,7 +153,7 @@ const projects = {
       ],
       title: "Stormy Seas",
       description:
-        "Dramatic cargo ship scene in turbulent ocean waters with moody lighting, rain effects, and atmospheric tension.",
+        "Realistic Ocean Fisheye Render – Animation, simulation & render: Blender | Edit & color: Premiere Pro | SoundFX: Soundly",
       orientation: "horizontal",
     },
     {
@@ -176,7 +166,7 @@ const projects = {
       ],
       title: "Bard Forest",
       description:
-        "Nostalgic scene with classic Coca-Cola signage, vintage automobile, and retro gas station atmosphere with warm tones.",
+        "Realistic Barn – Unreal Engine 5.1 | Used Quixel Megascan Presets | Color grade & edit: DaVinci Resolve | SoundFX: Soundly",
       orientation: "horizontal",
     },
     {
@@ -187,8 +177,8 @@ const projects = {
           src: "/assets/environment/environment_vfx.mp4",
         },
       ],
-      title: "VFX",
-      description: "VFX",
+      title: "Environment VFX",
+      description: "Blender camera track and vfx work",
       orientation: "horizontal",
     },
     {
@@ -199,9 +189,9 @@ const projects = {
           src: "/assets/environment/environment_1.png",
         },
       ],
-      title: "MOAI",
+      title: "MAOI",
       description:
-        "MOAI",
+        "Maoi & Greenery – Realistic Environment Design | Created in Blender | Used Quixel Megascan assets | Color grade & edit: DaVinci Resolve",
       orientation: "horizontal",
     },
     {
@@ -214,7 +204,7 @@ const projects = {
       ],
       title: "Dabbe",
       description:
-        "Dabbe!",
+        "POV Interior Design – Realistic Fisheye Render | Created in Blender | Lighting & materials focused on realism | Color grade & edit: DaVinci Resolve",
       orientation: "horizontal",
     },
     {
@@ -227,7 +217,7 @@ const projects = {
       ],
       title: "Music Studio",
       description:
-        "Warm interior environment featuring piano, guitars, vintage furniture, and atmospheric lighting in a creative space.",
+        "Music Studio Environment – Realistic Interior Scene | Created in Blender | Focused on lighting, materials & atmosphere | Color grade & edit: DaVinci Resolve",
       orientation: "horizontal",
     },
 
@@ -241,8 +231,8 @@ const projects = {
           src: "/assets/gamedesign/gamedesign_lowlight_anim-1.mp4",
         },
       ],
-      title: "Lowlight Game",
-      description: "Lowlight",
+      title: "Character Animation",
+      description: "Procrate Character Animation 2d",
       orientation: "vertical",
     },
     {
@@ -253,8 +243,8 @@ const projects = {
           src: "/assets/gamedesign/gamedesign_lowlight_anim-2.mp4",
         },
       ],
-      title: "Lowlight Game",
-      description: "Lowlight",
+      title: "Jumpscare Animation",
+      description: "Procrate Jumpscare Animation 2d",
       orientation: "vertical",
     },
     {
@@ -265,8 +255,8 @@ const projects = {
           src: "/assets/gamedesign/gamedesign_lowlight_photo.jpg",
         },
       ],
-      title: "Lowlight Game",
-      description: "Lowlight",
+      title: "Environment Design",
+      description: "Blender Environment Design 3d to 2d",
       orientation: "vertical",
     },
   ],
@@ -279,8 +269,8 @@ const projects = {
           src: "/assets/gif/gif_dayi.mp4",
         },
       ],
-      title: "Dayi Animation",
-      description: "Animated character sequence with smooth motion and dynamic presentation.",
+      title: "The Judging Dayı",
+      description: "He mirrors society itself; in condemning others, he confronts his own reflection.",
       orientation: "vertical",
     },
     {
@@ -291,8 +281,8 @@ const projects = {
           src: "/assets/gif/gif_dayi2.mp4",
         },
       ],
-      title: "Dayi Animation 2",
-      description: "Second animated sequence featuring character movement and expressive animation.",
+      title: "The Waiting Dayı",
+      description: "At a point where time no longer flows, he learns only to breathe.",
       orientation: "vertical",
     },
     {
@@ -303,8 +293,8 @@ const projects = {
           src: "/assets/gif/gif_amcas1.mp4",
         },
       ],
-      title: "Amcas Animation 1",
-      description: "Second animated sequence featuring character movement and expressive animation.",
+      title: "The Content Dayı",
+      description: "In a fleeting moment of peace, the weight of existence softens.",
       orientation: "vertical",
     },
     {
@@ -315,8 +305,8 @@ const projects = {
           src: "/assets/gif/gif_amcas.mp4",
         },
       ],
-      title: "Amcas Animation 2",
-      description: "Second animated sequence featuring character movement and expressive animation.",
+      title: "The Unhinged Man",
+      description: "Beyond the edge of reason, it is not madness—only the naked truth.",
       orientation: "vertical",
     },
     {
@@ -398,20 +388,39 @@ const projects = {
   "Product Design": [
     {
       id: 27,
+       items: [
+        {
+          type: "video",
+          src: "/assets/product/product_karadutvid.mp4",
+        },
+      ],
+      title: "KARADUT AD",
+      description:
+        "Karadut juice is a popular drink among health-conscious consumers. As a 3D animator, I created a video using Blender, After Effects, Premiere Pro, and Adobe Illustrator to promote this delicious and healthy drink. The video showcases the process of making Karadut juice and features dynamic typography and transition effects.",
+      orientation: "vertical",
+    },
+    {
+      id: 31,
       items: [
         {
           type: "image",
-          src: "/assets/product/product_phone1.png",
+          src: "/assets/product/product_karadut1.png",
         },
         {
           type: "image",
-          src: "/assets/product/product_phone2.png",
+          src: "/assets/product/product_karadut2.png",
+        },
+        {
+          type: "image",
+          src: "/assets/product/product_karadut3.png",
         },
       ],
-      title: "MOCHA PHONE 107",
-      description: "Yellow smartphone product photography collection with clean angles and creative styling.",
+      title: "KARADUT",
+      description:
+        "Premium black mulberry juice packaging designs with creative beverage photography, floating fruits, and nutritional branding.",
       orientation: "vertical",
     },
+      
     {
       id: 28,
       items: [
@@ -446,36 +455,19 @@ const projects = {
       id: 30,
       items: [
         {
-          type: "video",
-          src: "/assets/product/product_karadutvid.mp4",
+          type: "image",
+          src: "/assets/product/product_phone1.png",
+        },
+        {
+          type: "image",
+          src: "/assets/product/product_phone2.png",
         },
       ],
-      title: "KARADUT AD",
-      description:
-        "Premium black mulberry juice packaging designs with creative beverage photography, floating fruits, and nutritional branding.",
+      title: "MOCHA PHONE 107",
+      description: "Yellow smartphone product photography collection with clean angles and creative styling.",
       orientation: "vertical",
     },
-    {
-      id: 31,
-      items: [
-        {
-          type: "image",
-          src: "/assets/product/product_karadut1.png",
-        },
-        {
-          type: "image",
-          src: "/assets/product/product_karadut2.png",
-        },
-        {
-          type: "image",
-          src: "/assets/product/product_karadut3.png",
-        },
-      ],
-      title: "KARADUT",
-      description:
-        "Premium black mulberry juice packaging designs with creative beverage photography, floating fruits, and nutritional branding.",
-      orientation: "vertical",
-    },
+     
   ],
   Prompt: [
     {
@@ -487,7 +479,7 @@ const projects = {
         },
       ],
       title: "Book",
-      description: "book",
+      description: "",
       orientation: "vertical",
     },
     {
@@ -499,7 +491,7 @@ const projects = {
         },
       ],
       title: "Sword",
-      description: "Sword",
+      description: "",
       orientation: "vertical",
     },
     {
@@ -507,13 +499,14 @@ const projects = {
       items: [
         {
           type: "video",
-          src: "/assets/prompt/prompt_bloody.mp4",
+          src: "/assets/prompt/prompt_coin.mp4",
         },
       ],
-      title: "Bloody",
-      description: "bloody",
+      title: "Coin",
+      description: "",
       orientation: "vertical",
     },
+      
     {
       id: 35,
       items: [
@@ -523,7 +516,7 @@ const projects = {
         },
       ],
       title: "Hamburger",
-      description: "hamburger",
+      description: "",
       orientation: "vertical",
     },
     {
@@ -535,21 +528,22 @@ const projects = {
         },
       ],
       title: "Box",
-      description: "box",
+      description: "",
       orientation: "vertical",
     },
     {
-      id: 37,
+      id: 37, 
       items: [
         {
           type: "video",
-          src: "/assets/prompt/prompt_coin.mp4",
+          src: "/assets/prompt/prompt_bloody.mp4",
         },
       ],
-      title: "Coin",
-      description: "coin",
+      title: "Bloody",
+      description: "",
       orientation: "vertical",
     },
+      
     {
       id: 38,
       items: [
@@ -568,7 +562,7 @@ const projects = {
         },
       ],
       title: "MIDI Keyboard",
-      description: "MIDI",
+      description: "",
       orientation: "vertical",
     },
     {
@@ -588,7 +582,7 @@ const projects = {
         },
       ],
       title: "Sunsword",
-      description: "Sunsword",
+      description: "",
       orientation: "vertical",
     },
     {
@@ -596,7 +590,7 @@ const projects = {
       items: [
         {
           type: "image",
-          src: "/assets/prompt/prompt_sword1.png",
+          src: "/assets/prompt/prompt_sword12.png",
         },
         {
           type: "image",
@@ -604,15 +598,73 @@ const projects = {
         },
         {
           type: "image",
-          src: "/assets/prompt/prompt_sword2.png",
+          src: "/assets/prompt/prompt_sword1.png",
         },
       ],
       title: "Sword",
-      description: "Sunsword",
+      description: "",
       orientation: "vertical",
     }, 
   ],
-  "The Bulb": [],
+  "The Bulb": [
+       {
+  id: 44,
+  items: [{ 
+    type: "image",
+    src: "/assets/TheBulb/kapak.png",
+  },
+],
+
+
+  title: "The Bulb Cover",
+  description: "The Bulb Book Cover Design",
+  orientation: "horizontal",
+},
+
+
+   {
+  id: 41,
+  items: [{ 
+    type: "image",
+    src: "/assets/TheBulb/TheBulb_1.png",
+  },
+],
+
+
+  title: "The Bulb Cover",
+  description: "The Bulb Book Cover Design",
+  orientation: "horizontal",
+},
+   {
+  id: 42,
+  items: [{ 
+    type: "image",
+    src: "/assets/TheBulb/TheBulb_2.png",
+  },
+],
+
+
+  title: "The Bulb Cover",
+  description: "The Bulb Book Cover Design",
+  orientation: "horizontal",
+},
+   {
+  id: 43,
+  items: [{ 
+    type: "image",
+    src: "/assets/TheBulb/TheBulb_board.png",
+  },
+],
+
+
+  title: "The Bulb Cover",
+  description: "The Bulb Book Cover Design",
+  orientation: "horizontal",
+},
+
+
+
+  ],
 }
 
 function VideoPlayer({ src, title }: { src: string; title: string }) {
@@ -709,18 +761,19 @@ function TiledPreview({ items }: { items: Array<{ type: string; src: string }> }
   return (
     <div className="grid grid-cols-2 grid-rows-2 gap-0.5 w-full h-full">
       {items.slice(0, 4).map((item, idx) =>
-        item.type === "video" ? (
-          <div key={idx} className="w-full h-full">
-            <VideoPlayer src={item.src} title={`Preview ${idx + 1}`} />
-          </div>
-        ) : (
-          <img
-            key={idx}
-            src={item.src || "/placeholder.svg"}
-            alt={`Preview ${idx + 1}`}
-            className="w-full h-full object-cover"
-          />
-        ),
+        {
+          return item.type === "video" ? (
+            <div key={idx} className="w-full h-full">
+              <VideoPlayer src={item.src} title={`Preview ${idx + 1}`} />
+            </div>
+          ) : (
+            <img
+              key={idx}
+              src={item.src || "/placeholder.svg"}
+              alt={`Preview ${idx + 1}`}
+              className="w-full h-full object-cover" />
+          )
+        },
       )}
     </div>
   )
@@ -1100,7 +1153,7 @@ export default function PortfolioPage() {
                     className="w-full h-full"
                   />
                 </div>
-                <h2 className="text-xl lg:text-2xl font-medium mb-8 text-center">Lightsout</h2>
+                <h2 className="text-xl lg:text-2xl font-medium mb-8 text-center">Lightsout - Animated Short Film</h2>
 
                 {/* Projects Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
@@ -1187,7 +1240,7 @@ export default function PortfolioPage() {
                     className="w-full h-full"
                   />
                 </div>
-                <h2 className="text-xl lg:text-2xl font-medium mb-8 text-center">The Bulb</h2>
+                <h2 className="text-xl lg:text-2xl font-medium mb-8 text-center">The Bulb - Animated Short Film</h2>
 
                 {/* Projects Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
